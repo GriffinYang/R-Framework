@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* gallery part */
+.gallery-content .text {
+  grid-column: 1/2;
+  display: flex;
+  align-items: flex-end;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4287f5;
+}
+.gallery-container {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  flex-wrap: wrap;
+}
+.gallery-content {
+  display: grid;
+  width: 30%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 0 0.5rem;
+}
+.img-container {
+  grid-column: 1/4;
+  grid-row: 2/5;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+.gallery-caption {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* overlayer */
+.gallery-container-overlayer {
+  width: 85%;
+  height: 95%;
+  margin: 20px auto;
+}
+
+/* gallery-overlayer */
+.gallery-overlayer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  z-index: -999;
+}
+.fas {
+  color: white;
+  font-size: 3rem;
+}
+.left {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  z-index: 9999 !important;
+}
+.right {
+  grid-column: 12/13;
+  grid-row: 5/6;
+  z-index: 9999 !important;
+}
+.close {
+  grid-column: 12/13;
+  z-index: 999999;
+}
+.gallery-container-overlayer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+.gallery-content-overlayer {
+  grid-column: 1/13;
+  grid-row: 2/9;
+}
+.img-container-overlayer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.img-container-overlayer img {
+  height: 100%;
+}
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/12;
+  grid-row: 10/12;
+}
+.thumbnails img {
+  opacity: 0.3;
+}
+.thumbactive {
+  opacity: 1 !important;
+}
+.open {
+  opacity: 1;
+  background-color: black;
+  z-index: 999;
+}
+@media only screen and (max-width: 768px) {
+  .gallery-content {
+    width: 40%;
+  }
+  .gallery-container {
+    justify-content: space-between;
+  }
+}
