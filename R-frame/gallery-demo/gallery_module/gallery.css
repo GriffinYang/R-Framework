@@ -20,7 +20,7 @@
 }
 .gallery-content {
   display: grid;
-  flex: 1 1 0;
+  width: 30%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   margin: 0 0.5rem;
