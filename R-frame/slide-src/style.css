@@ -1,0 +1,55 @@
+.container {
+  width: 600px;
+  height: 400px;
+  margin: 40px auto;
+}
+.slide-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  overflow: hidden;
+  transition: all;
+}
+.slide-content {
+  grid-row: 1/8;
+  grid-column: 1/13;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition: all;
+  transition-duration: 2000ms;
+}
+.slide-content div {
+  display: flex;
+  flex-shrink: 1;
+  transition: all;
+  transition-duration: 2000ms;
+  position: relative;
+}
+.img {
+  width: 600px !important;
+  background-color: green;
+}
+.style-1 {
+  right: 0px;
+}
+.style0 {
+  right: 593.463px !important;
+}
+.style1 {
+  right: 913.463px !important;
+}
+.style2 {
+  right: 1233.463px !important;
+}
+.style3 {
+  right: 1836.775px !important;
+}
+.style4 {
+  right: 2410.663px !important;
+}
